@@ -11,3 +11,4 @@ C:\Users\Nishen Peiris\documents\visual studio 2012\Projects\WildLife\WildLife\o
 C:\Users\Nishen Peiris\documents\visual studio 2012\Projects\WildLife\WildLife\obj\Debug\WildLife.csproj.GenerateResource.Cache
 C:\Users\Nishen Peiris\documents\visual studio 2012\Projects\WildLife\WildLife\obj\Debug\WildLife.exe
 C:\Users\Nishen Peiris\documents\visual studio 2012\Projects\WildLife\WildLife\obj\Debug\WildLife.pdb
+C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\WildLife\WildLife\obj\Debug\WildLife.Ticket.resources

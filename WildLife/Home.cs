@@ -37,5 +37,12 @@ namespace WildLife
             Vehicle vehicleForm = new Vehicle();
             vehicleForm.Show();
         }
+
+        private void btnTicket_Click(object sender, EventArgs e)
+        {
+            // Let's open the ticket issue form
+            Ticket ticketForm = new Ticket();
+            ticketForm.Show();
+        }
     }
 }

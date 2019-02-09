@@ -77,6 +77,7 @@
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // groupBox3
             // 
@@ -105,6 +106,7 @@
             this.btnSave.TabIndex = 9;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label2
             // 
@@ -217,7 +219,9 @@
             this.Controls.Add(this.lblNICNumber);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.lblTitle);
+            this.MaximizeBox = false;
             this.Name = "Owner";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Wildlife | Register An Owner";
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();

@@ -38,12 +38,12 @@
             this.txtAddress = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
             this.groupBoxHeader = new System.Windows.Forms.GroupBox();
-            this.groupBoxFooter = new System.Windows.Forms.GroupBox();
-            this.groupBoxSideBar = new System.Windows.Forms.GroupBox();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.lblSubtitle = new System.Windows.Forms.Label();
-            this.lblTitle = new System.Windows.Forms.Label();
             this.lblDescription = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
+            this.groupBoxFooter = new System.Windows.Forms.GroupBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.groupBoxSideBar = new System.Windows.Forms.GroupBox();
+            this.lblSubtitle = new System.Windows.Forms.Label();
             this.groupBoxHeader.SuspendLayout();
             this.groupBoxFooter.SuspendLayout();
             this.groupBoxSideBar.SuspendLayout();
@@ -134,44 +134,14 @@
             this.groupBoxHeader.TabIndex = 10;
             this.groupBoxHeader.TabStop = false;
             // 
-            // groupBoxFooter
+            // lblDescription
             // 
-            this.groupBoxFooter.Controls.Add(this.btnCancel);
-            this.groupBoxFooter.Controls.Add(this.btnSave);
-            this.groupBoxFooter.Location = new System.Drawing.Point(0, 452);
-            this.groupBoxFooter.Name = "groupBoxFooter";
-            this.groupBoxFooter.Size = new System.Drawing.Size(886, 60);
-            this.groupBoxFooter.TabIndex = 11;
-            this.groupBoxFooter.TabStop = false;
-            // 
-            // groupBoxSideBar
-            // 
-            this.groupBoxSideBar.Controls.Add(this.lblSubtitle);
-            this.groupBoxSideBar.Location = new System.Drawing.Point(0, 86);
-            this.groupBoxSideBar.Name = "groupBoxSideBar";
-            this.groupBoxSideBar.Size = new System.Drawing.Size(200, 374);
-            this.groupBoxSideBar.TabIndex = 11;
-            this.groupBoxSideBar.TabStop = false;
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Location = new System.Drawing.Point(697, 19);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(75, 23);
-            this.btnCancel.TabIndex = 10;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // lblSubtitle
-            // 
-            this.lblSubtitle.AutoSize = true;
-            this.lblSubtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtitle.Location = new System.Drawing.Point(12, 16);
-            this.lblSubtitle.Name = "lblSubtitle";
-            this.lblSubtitle.Size = new System.Drawing.Size(104, 13);
-            this.lblSubtitle.TabIndex = 12;
-            this.lblSubtitle.Text = "Register A Driver";
+            this.lblDescription.AutoSize = true;
+            this.lblDescription.Location = new System.Drawing.Point(44, 48);
+            this.lblDescription.Name = "lblDescription";
+            this.lblDescription.Size = new System.Drawing.Size(172, 13);
+            this.lblDescription.TabIndex = 12;
+            this.lblDescription.Text = "A new driver can be registerd here.";
             // 
             // lblTitle
             // 
@@ -183,14 +153,44 @@
             this.lblTitle.TabIndex = 13;
             this.lblTitle.Text = "Register A Driver";
             // 
-            // lblDescription
+            // groupBoxFooter
             // 
-            this.lblDescription.AutoSize = true;
-            this.lblDescription.Location = new System.Drawing.Point(44, 48);
-            this.lblDescription.Name = "lblDescription";
-            this.lblDescription.Size = new System.Drawing.Size(172, 13);
-            this.lblDescription.TabIndex = 12;
-            this.lblDescription.Text = "A new driver can be registerd here.";
+            this.groupBoxFooter.Controls.Add(this.btnCancel);
+            this.groupBoxFooter.Controls.Add(this.btnSave);
+            this.groupBoxFooter.Location = new System.Drawing.Point(0, 452);
+            this.groupBoxFooter.Name = "groupBoxFooter";
+            this.groupBoxFooter.Size = new System.Drawing.Size(886, 60);
+            this.groupBoxFooter.TabIndex = 11;
+            this.groupBoxFooter.TabStop = false;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Location = new System.Drawing.Point(697, 19);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(75, 23);
+            this.btnCancel.TabIndex = 10;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // groupBoxSideBar
+            // 
+            this.groupBoxSideBar.Controls.Add(this.lblSubtitle);
+            this.groupBoxSideBar.Location = new System.Drawing.Point(0, 86);
+            this.groupBoxSideBar.Name = "groupBoxSideBar";
+            this.groupBoxSideBar.Size = new System.Drawing.Size(200, 374);
+            this.groupBoxSideBar.TabIndex = 11;
+            this.groupBoxSideBar.TabStop = false;
+            // 
+            // lblSubtitle
+            // 
+            this.lblSubtitle.AutoSize = true;
+            this.lblSubtitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSubtitle.Location = new System.Drawing.Point(12, 16);
+            this.lblSubtitle.Name = "lblSubtitle";
+            this.lblSubtitle.Size = new System.Drawing.Size(104, 13);
+            this.lblSubtitle.TabIndex = 12;
+            this.lblSubtitle.Text = "Register A Driver";
             // 
             // Driver
             // 
@@ -208,7 +208,9 @@
             this.Controls.Add(this.lblMobileNumber);
             this.Controls.Add(this.lblNICNumber);
             this.Controls.Add(this.lblName);
+            this.MaximizeBox = false;
             this.Name = "Driver";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Wildlife | Register A Driver";
             this.groupBoxHeader.ResumeLayout(false);
             this.groupBoxHeader.PerformLayout();

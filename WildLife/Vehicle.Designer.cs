@@ -33,16 +33,16 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnSave = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.txtName = new System.Windows.Forms.TextBox();
+            this.txtPlateNumber = new System.Windows.Forms.TextBox();
             this.lblNumber = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
             this.lblMobileNumber = new System.Windows.Forms.Label();
             this.lblNICNumber = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBoxOwner = new System.Windows.Forms.ComboBox();
+            this.comboBoxDriver = new System.Windows.Forms.ComboBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -75,6 +75,7 @@
             this.btnCancel.TabIndex = 10;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // groupBox3
             // 
@@ -88,21 +89,22 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.btnCancel);
-            this.groupBox2.Controls.Add(this.button1);
+            this.groupBox2.Controls.Add(this.btnSave);
             this.groupBox2.Location = new System.Drawing.Point(0, 452);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(886, 60);
             this.groupBox2.TabIndex = 23;
             this.groupBox2.TabStop = false;
             // 
-            // button1
+            // btnSave
             // 
-            this.button1.Location = new System.Drawing.Point(616, 19);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnSave.Location = new System.Drawing.Point(616, 19);
+            this.btnSave.Name = "btnSave";
+            this.btnSave.Size = new System.Drawing.Size(75, 23);
+            this.btnSave.TabIndex = 9;
+            this.btnSave.Text = "Save";
+            this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // label6
             // 
@@ -124,12 +126,12 @@
             this.groupBox1.TabIndex = 21;
             this.groupBox1.TabStop = false;
             // 
-            // txtName
+            // txtPlateNumber
             // 
-            this.txtName.Location = new System.Drawing.Point(331, 113);
-            this.txtName.Name = "txtName";
-            this.txtName.Size = new System.Drawing.Size(220, 20);
-            this.txtName.TabIndex = 17;
+            this.txtPlateNumber.Location = new System.Drawing.Point(331, 113);
+            this.txtPlateNumber.Name = "txtPlateNumber";
+            this.txtPlateNumber.Size = new System.Drawing.Size(220, 20);
+            this.txtPlateNumber.TabIndex = 17;
             // 
             // lblNumber
             // 
@@ -167,37 +169,38 @@
             this.lblNICNumber.TabIndex = 24;
             this.lblNICNumber.Text = "Owner:";
             // 
-            // comboBox1
+            // comboBoxOwner
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(331, 164);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(441, 21);
-            this.comboBox1.TabIndex = 28;
+            this.comboBoxOwner.FormattingEnabled = true;
+            this.comboBoxOwner.Location = new System.Drawing.Point(331, 164);
+            this.comboBoxOwner.Name = "comboBoxOwner";
+            this.comboBoxOwner.Size = new System.Drawing.Size(441, 21);
+            this.comboBoxOwner.TabIndex = 28;
             // 
-            // comboBox2
+            // comboBoxDriver
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(331, 216);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(441, 21);
-            this.comboBox2.TabIndex = 29;
+            this.comboBoxDriver.FormattingEnabled = true;
+            this.comboBoxDriver.Location = new System.Drawing.Point(331, 216);
+            this.comboBoxDriver.Name = "comboBoxDriver";
+            this.comboBoxDriver.Size = new System.Drawing.Size(441, 21);
+            this.comboBoxDriver.TabIndex = 29;
             // 
             // Vehicle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 511);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.comboBoxDriver);
+            this.Controls.Add(this.comboBoxOwner);
             this.Controls.Add(this.lblMobileNumber);
             this.Controls.Add(this.lblNICNumber);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.txtName);
+            this.Controls.Add(this.txtPlateNumber);
             this.Controls.Add(this.lblNumber);
             this.Controls.Add(this.lblTitle);
+            this.MaximizeBox = false;
             this.Name = "Vehicle";
             this.Text = "Wildlife | Register A Vehicle";
             this.groupBox3.ResumeLayout(false);
@@ -217,16 +220,16 @@
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txtName;
+        private System.Windows.Forms.TextBox txtPlateNumber;
         private System.Windows.Forms.Label lblNumber;
         private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Label lblMobileNumber;
         private System.Windows.Forms.Label lblNICNumber;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBoxOwner;
+        private System.Windows.Forms.ComboBox comboBoxDriver;
 
     }
 }

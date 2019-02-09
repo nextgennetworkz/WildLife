@@ -31,6 +31,7 @@
             this.btnDriver = new System.Windows.Forms.Button();
             this.btnVehicle = new System.Windows.Forms.Button();
             this.btnOwner = new System.Windows.Forms.Button();
+            this.btnTicket = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnDriver
@@ -63,14 +64,26 @@
             this.btnOwner.UseVisualStyleBackColor = true;
             this.btnOwner.Click += new System.EventHandler(this.btnOwner_Click);
             // 
+            // btnTicket
+            // 
+            this.btnTicket.Location = new System.Drawing.Point(321, 202);
+            this.btnTicket.Name = "btnTicket";
+            this.btnTicket.Size = new System.Drawing.Size(75, 23);
+            this.btnTicket.TabIndex = 3;
+            this.btnTicket.Text = "Ticket";
+            this.btnTicket.UseVisualStyleBackColor = true;
+            this.btnTicket.Click += new System.EventHandler(this.btnTicket_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(984, 761);
+            this.ClientSize = new System.Drawing.Size(784, 511);
+            this.Controls.Add(this.btnTicket);
             this.Controls.Add(this.btnOwner);
             this.Controls.Add(this.btnVehicle);
             this.Controls.Add(this.btnDriver);
+            this.MaximizeBox = false;
             this.Name = "Home";
             this.Text = "Wildlife | Home";
             this.ResumeLayout(false);
@@ -82,5 +95,6 @@
         private System.Windows.Forms.Button btnDriver;
         private System.Windows.Forms.Button btnVehicle;
         private System.Windows.Forms.Button btnOwner;
+        private System.Windows.Forms.Button btnTicket;
     }
 }

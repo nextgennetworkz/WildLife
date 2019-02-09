@@ -13,6 +13,8 @@ namespace WildLife
 {
     public partial class Driver : Form
     {
+        string error = "Error";
+
         public Driver()
         {
             InitializeComponent();
@@ -20,21 +22,28 @@ namespace WildLife
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            // Let's save the driver in the database
-            string connetionString;
-            SqlConnection cnn;
-            connetionString = @"Data Source=localhost:3306;Initial Catalog=wildlife;User ID=root;Password=gvt123";
-            cnn = new SqlConnection(connetionString);
-            cnn.Open();
-            MessageBox.Show("Connection Open!");
-            cnn.Close();
+            // Let's validate the name of the driver
+            if (string.IsNullOrEmpty(txtName.Text))
+            {
+                MessageBox.Show("Please enter the name of the driver.", error, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+                
+            }
 
+            // Let's validate the NIC number of the driver
+            if (string.IsNullOrEmpty(txtNICNumber.Text))
+            {
+                MessageBox.Show("Please enter the NIC number of the driver.", error, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
 
+            // Let's save the driver's information in the database
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-
+            // Let's close the form
+            this.Close();
         }
     }
 }

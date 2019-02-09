@@ -12,6 +12,8 @@ namespace WildLife
 {
     public partial class Vehicle : Form
     {
+        string error = "Error";
+
         public Vehicle()
         {
             InitializeComponent();
@@ -19,18 +21,23 @@ namespace WildLife
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            // Let's save the vehicle information in the database
+            // Let's validate the plate number of the vehicle
+            if (string.IsNullOrEmpty(txtPlateNumber.Text))
+            {
+                MessageBox.Show("Please enter the plate number of the vehicle.", error, MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
 
-        }
+            }
 
-        private void btnSave_Click_1(object sender, EventArgs e)
-        {
+            // Let's verify that the owner is selected
 
+            // Let's verify that the driver is selected
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
         {
-
+            // Let's close the form
+            this.Close();
         }
     }
 }
