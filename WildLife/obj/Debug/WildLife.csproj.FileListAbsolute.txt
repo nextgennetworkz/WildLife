@@ -5,10 +5,13 @@ C:\Users\Nishen Peiris\documents\visual studio 2012\Projects\WildLife\WildLife\o
 C:\Users\Nishen Peiris\documents\visual studio 2012\Projects\WildLife\WildLife\obj\Debug\WildLife.Driver.resources
 C:\Users\Nishen Peiris\documents\visual studio 2012\Projects\WildLife\WildLife\obj\Debug\WildLife.Form1.resources
 C:\Users\Nishen Peiris\documents\visual studio 2012\Projects\WildLife\WildLife\obj\Debug\WildLife.Home.resources
-C:\Users\Nishen Peiris\documents\visual studio 2012\Projects\WildLife\WildLife\obj\Debug\WildLife.Owner.resources
 C:\Users\Nishen Peiris\documents\visual studio 2012\Projects\WildLife\WildLife\obj\Debug\WildLife.Properties.Resources.resources
 C:\Users\Nishen Peiris\documents\visual studio 2012\Projects\WildLife\WildLife\obj\Debug\WildLife.Vehicle.resources
 C:\Users\Nishen Peiris\documents\visual studio 2012\Projects\WildLife\WildLife\obj\Debug\WildLife.csproj.GenerateResource.Cache
 C:\Users\Nishen Peiris\documents\visual studio 2012\Projects\WildLife\WildLife\obj\Debug\WildLife.exe
 C:\Users\Nishen Peiris\documents\visual studio 2012\Projects\WildLife\WildLife\obj\Debug\WildLife.pdb
 C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\WildLife\WildLife\obj\Debug\WildLife.Ticket.resources
+C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\WildLife\WildLife\bin\Debug\Google.Protobuf.dll
+C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\WildLife\WildLife\bin\Debug\MySql.Data.dll
+C:\Users\Nishen Peiris\Documents\Visual Studio 2012\Projects\WildLife\WildLife\bin\Debug\Google.Protobuf.xml
+C:\Users\Nishen Peiris\documents\visual studio 2012\Projects\WildLife\WildLife\obj\Debug\WildLife.Company.resources

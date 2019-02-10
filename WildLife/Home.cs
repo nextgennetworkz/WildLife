@@ -26,9 +26,9 @@ namespace WildLife
 
         private void btnOwner_Click(object sender, EventArgs e)
         {
-            // Let's open the owner registration form
-            Owner ownerForm = new Owner();
-            ownerForm.Show();
+            // Let's open the company registration form
+            Company companyForm = new Company();
+            companyForm.Show();
         }
 
         private void btnVehicle_Click(object sender, EventArgs e)

@@ -44,5 +44,16 @@ namespace WildLife.Properties {
                 return ((string)(this["wildlifeConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("server=localhost;user id=root;password=gvt123;persistsecurityinfo=True;database=w" +
+            "ildlife;characterset=utf8")]
+        public string wildlifeConnectionString1 {
+            get {
+                return ((string)(this["wildlifeConnectionString1"]));
+            }
+        }
     }
 }

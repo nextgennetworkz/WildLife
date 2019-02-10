@@ -60,7 +60,7 @@
             this.btnOwner.Name = "btnOwner";
             this.btnOwner.Size = new System.Drawing.Size(75, 23);
             this.btnOwner.TabIndex = 2;
-            this.btnOwner.Text = "Owner";
+            this.btnOwner.Text = "Company";
             this.btnOwner.UseVisualStyleBackColor = true;
             this.btnOwner.Click += new System.EventHandler(this.btnOwner_Click);
             // 
